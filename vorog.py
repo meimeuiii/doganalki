@@ -12,12 +12,12 @@ class Vorog:
         window.blit(self.photo, (self.hitbox.x, self.hitbox.y))
     def move(self):
         keys = pygame.key.get_pressed()
-        if keys[pygame.K_w]:
+        if keys[pygame.K_i]:
             self.hitbox.y -= self.speed
-        if keys[pygame.K_h]:
+        if keys[pygame.K_k]:
             self.hitbox.y += self.speed
-        if keys[pygame.K_a]:
+        if keys[pygame.K_j]:
             self.hitbox.x -= self.speed
-        if keys[pygame.K_d]:
+        if keys[pygame.K_k]:
             self.hitbox.x += self.speed
 
